@@ -6,6 +6,7 @@
     - Instalação lib: pip install graphviz
 
 # UDESC - 55MQU
+- Repositório disponível em: https://github.com/guilhermelange/SteinerTree
 - Modelo matemático linear desenvolvido conforme: https://homepage.univie.ac.at/ivana.ljubic/research/publications/NetworksSI.pdf (Página 9)
 - Instâncias disponíveis no diretório /instances
 - Os relatório gerados conforme adição do parâmetro --visual ficam disponíveis no diretório /output
