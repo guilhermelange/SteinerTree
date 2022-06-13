@@ -57,20 +57,22 @@ def leitura_instancia(file):
     pesos = gera_matriz_arestas(vertices, M)
 
     terminais = []
-    for i in range(0, vertices_terminais):
-        terminais.append(i)
-
     steiner = []
-    for i in range(vertices_terminais, vertices_terminais + vertices_steiner):
-        steiner.append(i)
 
     for linha in linhas:
         dados = linha.split(' ')
-        a, b, w = int(dados[0]), int(dados[1]), float(dados[2])
-        a -= 1
-        b -= 1
-        pesos[a][b] = w
-        pesos[b][a] = w
+        if dados[0] == 'T':
+            terminais.append(int(dados[1])-1)
+        else:
+            a, b, w = int(dados[1]), int(dados[2]), float(dados[3])
+            a -= 1
+            b -= 1
+            pesos[a][b] = w
+            pesos[b][a] = w
+
+    for i in range(0, vertices):
+        if i not in terminais:
+            steiner.append(i)
 
     return pesos, terminais, steiner
 
