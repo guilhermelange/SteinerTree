@@ -10,9 +10,9 @@ graph "exemplo01.txt" {
 	3 [label=3]
 	node [color=aqua shape=circle width=0.05]
 	4 [label=4]
-	0 -- 1 [label=0.4 weight=600]
 	0 -- 2 [label=0.2 color=red penwidth=3 weight=800]
-	0 -- 3 [label=0.1 color=red penwidth=3 weight=900]
-	1 -- 3 [label=0.2 color=red penwidth=3 weight=800]
-	1 -- 4 [label=0.5 weight=500]
+	0 -- 3 [label=0.5 weight=500]
+	0 -- 4 [label=0.4 weight=600]
+	1 -- 4 [label=0.2 color=red penwidth=3 weight=800]
+	2 -- 4 [label=0.1 color=red penwidth=3 weight=900]
 }
