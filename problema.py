@@ -191,6 +191,8 @@ print('Executando algoritmo de programação inteira linear...')
 resultado = executa_arvore_steiner(vertices, arestas, subconjuntos, timelimit)
 
 print('')
+print('Terminais: ', terminais)
+print('Steiner: ', steiner)
 print('Arestas: ', resultado['arestas'])
 print('Peso das arestas', resultado['peso'])
 print('Tempo: ', resultado['tempo'])
